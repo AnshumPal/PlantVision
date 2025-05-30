@@ -1,0 +1,41 @@
+<!-- res/layout/activity_result.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtPlantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txtPlantDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading description..."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>
